@@ -1,0 +1,104 @@
+function Moves.new 0
+push constant 4
+call Memory.alloc 1
+pop pointer 0
+push constant 84
+call Array.new 1
+pop this 0
+push constant 36
+call Array.new 1
+pop this 1
+push constant 144
+call Array.new 1
+pop this 2
+push constant 0
+pop this 3
+push pointer 0
+return
+function Moves.set1 0
+push argument 0
+pop pointer 0
+push argument 1
+push this 0
+add
+push argument 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+return
+function Moves.set2 0
+push argument 0
+pop pointer 0
+push argument 1
+push this 1
+add
+push argument 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+return
+function Moves.get1 0
+push argument 0
+pop pointer 0
+push argument 1
+push this 0
+add
+pop pointer 1
+push that 0
+return
+function Moves.get2 0
+push argument 0
+pop pointer 0
+push argument 1
+push this 1
+add
+pop pointer 1
+push that 0
+return
+function Moves.set 0
+push argument 0
+pop pointer 0
+push argument 1
+push this 2
+add
+push argument 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push argument 1
+pop this 3
+push constant 0
+return
+function Moves.geti 0
+push argument 0
+pop pointer 0
+push this 3
+return
+function Moves.get 0
+push argument 0
+pop pointer 0
+push argument 1
+push this 2
+add
+pop pointer 1
+push that 0
+return
+function Moves.dispose 0
+push argument 0
+pop pointer 0
+push this 0
+call Memory.deAlloc 1
+pop temp 0
+push this 1
+call Memory.deAlloc 1
+pop temp 0
+push this 2
+call Memory.deAlloc 1
+pop temp 0
+push constant 0
+return

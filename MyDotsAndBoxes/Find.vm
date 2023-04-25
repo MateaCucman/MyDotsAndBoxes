@@ -1,0 +1,5201 @@
+function Find.draw 1
+push argument 0
+push argument 1
+call Find.find 2
+pop temp 0
+push argument 1
+call Moves.geti 1
+call Random.setSeed 1
+pop temp 0
+push constant 1000
+call Random.randRange 1
+pop local 0
+push local 0
+call Random.setSeed 1
+pop temp 0
+push argument 1
+call Moves.geti 1
+call Random.randRange 1
+pop local 0
+push argument 1
+push local 0
+call Moves.get 2
+push constant 0
+eq
+push argument 1
+push constant 0
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 30
+push constant 40
+push constant 72
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 0
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 0
+push argument 1
+push constant 0
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END0
+label IF_FALSE0
+push argument 1
+push local 0
+call Moves.get 2
+push constant 1
+eq
+push argument 1
+push constant 1
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 30
+push constant 72
+push constant 104
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 1
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 1
+push argument 1
+push constant 1
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END1
+label IF_FALSE1
+push argument 1
+push local 0
+call Moves.get 2
+push constant 2
+eq
+push argument 1
+push constant 2
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push constant 30
+push constant 104
+push constant 136
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 2
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 2
+push argument 1
+push constant 2
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END2
+label IF_FALSE2
+push argument 1
+push local 0
+call Moves.get 2
+push constant 3
+eq
+push argument 1
+push constant 3
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 30
+push constant 136
+push constant 168
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 3
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 3
+push argument 1
+push constant 3
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END3
+label IF_FALSE3
+push argument 1
+push local 0
+call Moves.get 2
+push constant 4
+eq
+push argument 1
+push constant 4
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 30
+push constant 168
+push constant 200
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 4
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 4
+push argument 1
+push constant 4
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END4
+label IF_FALSE4
+push argument 1
+push local 0
+call Moves.get 2
+push constant 5
+eq
+push argument 1
+push constant 5
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push constant 30
+push constant 200
+push constant 232
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 5
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 5
+push argument 1
+push constant 5
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END5
+label IF_FALSE5
+push argument 1
+push local 0
+call Moves.get 2
+push constant 6
+eq
+push argument 1
+push constant 6
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push constant 62
+push constant 40
+push constant 72
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 6
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 0
+push argument 1
+push constant 0
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 6
+push argument 1
+push constant 6
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END6
+label IF_FALSE6
+push argument 1
+push local 0
+call Moves.get 2
+push constant 7
+eq
+push argument 1
+push constant 7
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push constant 62
+push constant 72
+push constant 104
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 7
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 1
+push argument 1
+push constant 1
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 7
+push argument 1
+push constant 7
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END7
+label IF_FALSE7
+push argument 1
+push local 0
+call Moves.get 2
+push constant 8
+eq
+push argument 1
+push constant 8
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push constant 62
+push constant 104
+push constant 136
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 8
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 2
+push argument 1
+push constant 2
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 8
+push argument 1
+push constant 8
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END8
+label IF_FALSE8
+push argument 1
+push local 0
+call Moves.get 2
+push constant 9
+eq
+push argument 1
+push constant 9
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push constant 62
+push constant 136
+push constant 168
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 9
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 3
+push argument 1
+push constant 3
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 9
+push argument 1
+push constant 9
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END9
+label IF_FALSE9
+push argument 1
+push local 0
+call Moves.get 2
+push constant 10
+eq
+push argument 1
+push constant 10
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push constant 62
+push constant 168
+push constant 200
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 10
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 4
+push argument 1
+push constant 4
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 10
+push argument 1
+push constant 10
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END10
+label IF_FALSE10
+push argument 1
+push local 0
+call Moves.get 2
+push constant 11
+eq
+push argument 1
+push constant 11
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push constant 62
+push constant 200
+push constant 232
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 11
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 5
+push argument 1
+push constant 5
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 11
+push argument 1
+push constant 11
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END11
+label IF_FALSE11
+push argument 1
+push local 0
+call Moves.get 2
+push constant 12
+eq
+push argument 1
+push constant 12
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE12
+goto IF_FALSE12
+label IF_TRUE12
+push constant 94
+push constant 40
+push constant 72
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 12
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 6
+push argument 1
+push constant 6
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 12
+push argument 1
+push constant 12
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END12
+label IF_FALSE12
+push argument 1
+push local 0
+call Moves.get 2
+push constant 13
+eq
+push argument 1
+push constant 13
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE13
+goto IF_FALSE13
+label IF_TRUE13
+push constant 94
+push constant 72
+push constant 104
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 13
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 7
+push argument 1
+push constant 7
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 13
+push argument 1
+push constant 13
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END13
+label IF_FALSE13
+push argument 1
+push local 0
+call Moves.get 2
+push constant 14
+eq
+push argument 1
+push constant 14
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE14
+goto IF_FALSE14
+label IF_TRUE14
+push constant 94
+push constant 104
+push constant 136
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 14
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 8
+push argument 1
+push constant 8
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 14
+push argument 1
+push constant 14
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END14
+label IF_FALSE14
+push argument 1
+push local 0
+call Moves.get 2
+push constant 15
+eq
+push argument 1
+push constant 15
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE15
+goto IF_FALSE15
+label IF_TRUE15
+push constant 94
+push constant 136
+push constant 168
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 15
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 9
+push argument 1
+push constant 9
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 15
+push argument 1
+push constant 15
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END15
+label IF_FALSE15
+push argument 1
+push local 0
+call Moves.get 2
+push constant 16
+eq
+push argument 1
+push constant 16
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE16
+goto IF_FALSE16
+label IF_TRUE16
+push constant 94
+push constant 168
+push constant 200
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 16
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 10
+push argument 1
+push constant 10
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 16
+push argument 1
+push constant 16
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END16
+label IF_FALSE16
+push argument 1
+push local 0
+call Moves.get 2
+push constant 17
+eq
+push argument 1
+push constant 17
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE17
+goto IF_FALSE17
+label IF_TRUE17
+push constant 94
+push constant 200
+push constant 232
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 17
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 11
+push argument 1
+push constant 11
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 17
+push argument 1
+push constant 17
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END17
+label IF_FALSE17
+push argument 1
+push local 0
+call Moves.get 2
+push constant 18
+eq
+push argument 1
+push constant 18
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE18
+goto IF_FALSE18
+label IF_TRUE18
+push constant 126
+push constant 40
+push constant 72
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 18
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 12
+push argument 1
+push constant 12
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 18
+push argument 1
+push constant 18
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END18
+label IF_FALSE18
+push argument 1
+push local 0
+call Moves.get 2
+push constant 19
+eq
+push argument 1
+push constant 19
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE19
+goto IF_FALSE19
+label IF_TRUE19
+push constant 126
+push constant 72
+push constant 104
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 19
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 13
+push argument 1
+push constant 13
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 19
+push argument 1
+push constant 19
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END19
+label IF_FALSE19
+push argument 1
+push local 0
+call Moves.get 2
+push constant 20
+eq
+push argument 1
+push constant 20
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE20
+goto IF_FALSE20
+label IF_TRUE20
+push constant 126
+push constant 104
+push constant 136
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 20
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 14
+push argument 1
+push constant 14
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 20
+push argument 1
+push constant 20
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END20
+label IF_FALSE20
+push argument 1
+push local 0
+call Moves.get 2
+push constant 21
+eq
+push argument 1
+push constant 21
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE21
+goto IF_FALSE21
+label IF_TRUE21
+push constant 126
+push constant 136
+push constant 168
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 21
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 15
+push argument 1
+push constant 15
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 21
+push argument 1
+push constant 21
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END21
+label IF_FALSE21
+push argument 1
+push local 0
+call Moves.get 2
+push constant 22
+eq
+push argument 1
+push constant 22
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE22
+goto IF_FALSE22
+label IF_TRUE22
+push constant 126
+push constant 168
+push constant 200
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 22
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 16
+push argument 1
+push constant 16
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 22
+push argument 1
+push constant 22
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END22
+label IF_FALSE22
+push argument 1
+push local 0
+call Moves.get 2
+push constant 23
+eq
+push argument 1
+push constant 23
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE23
+goto IF_FALSE23
+label IF_TRUE23
+push constant 126
+push constant 200
+push constant 232
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 23
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 17
+push argument 1
+push constant 17
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 23
+push argument 1
+push constant 23
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END23
+label IF_FALSE23
+push argument 1
+push local 0
+call Moves.get 2
+push constant 24
+eq
+push argument 1
+push constant 24
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE24
+goto IF_FALSE24
+label IF_TRUE24
+push constant 158
+push constant 40
+push constant 72
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 24
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 18
+push argument 1
+push constant 18
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 24
+push argument 1
+push constant 24
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END24
+label IF_FALSE24
+push argument 1
+push local 0
+call Moves.get 2
+push constant 25
+eq
+push argument 1
+push constant 25
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE25
+goto IF_FALSE25
+label IF_TRUE25
+push constant 158
+push constant 72
+push constant 104
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 25
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 19
+push argument 1
+push constant 19
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 25
+push argument 1
+push constant 25
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END25
+label IF_FALSE25
+push argument 1
+push local 0
+call Moves.get 2
+push constant 26
+eq
+push argument 1
+push constant 26
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE26
+goto IF_FALSE26
+label IF_TRUE26
+push constant 158
+push constant 104
+push constant 136
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 26
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 20
+push argument 1
+push constant 20
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 26
+push argument 1
+push constant 26
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END26
+label IF_FALSE26
+push argument 1
+push local 0
+call Moves.get 2
+push constant 27
+eq
+push argument 1
+push constant 27
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE27
+goto IF_FALSE27
+label IF_TRUE27
+push constant 158
+push constant 136
+push constant 168
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 27
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 21
+push argument 1
+push constant 21
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 27
+push argument 1
+push constant 27
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END27
+label IF_FALSE27
+push argument 1
+push local 0
+call Moves.get 2
+push constant 28
+eq
+push argument 1
+push constant 28
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE28
+goto IF_FALSE28
+label IF_TRUE28
+push constant 158
+push constant 168
+push constant 200
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 28
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 22
+push argument 1
+push constant 22
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 28
+push argument 1
+push constant 28
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END28
+label IF_FALSE28
+push argument 1
+push local 0
+call Moves.get 2
+push constant 29
+eq
+push argument 1
+push constant 29
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE29
+goto IF_FALSE29
+label IF_TRUE29
+push constant 158
+push constant 200
+push constant 232
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 29
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 23
+push argument 1
+push constant 23
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 29
+push argument 1
+push constant 29
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END29
+label IF_FALSE29
+push argument 1
+push local 0
+call Moves.get 2
+push constant 30
+eq
+push argument 1
+push constant 30
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE30
+goto IF_FALSE30
+label IF_TRUE30
+push constant 190
+push constant 40
+push constant 72
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 30
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 24
+push argument 1
+push constant 24
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 30
+push argument 1
+push constant 30
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END30
+label IF_FALSE30
+push argument 1
+push local 0
+call Moves.get 2
+push constant 31
+eq
+push argument 1
+push constant 31
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE31
+goto IF_FALSE31
+label IF_TRUE31
+push constant 190
+push constant 72
+push constant 104
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 31
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 25
+push argument 1
+push constant 25
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 31
+push argument 1
+push constant 31
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END31
+label IF_FALSE31
+push argument 1
+push local 0
+call Moves.get 2
+push constant 32
+eq
+push argument 1
+push constant 32
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE32
+goto IF_FALSE32
+label IF_TRUE32
+push constant 190
+push constant 104
+push constant 136
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 32
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 26
+push argument 1
+push constant 26
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 32
+push argument 1
+push constant 32
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END32
+label IF_FALSE32
+push argument 1
+push local 0
+call Moves.get 2
+push constant 33
+eq
+push argument 1
+push constant 33
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE33
+goto IF_FALSE33
+label IF_TRUE33
+push constant 190
+push constant 136
+push constant 168
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 33
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 27
+push argument 1
+push constant 27
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 33
+push argument 1
+push constant 33
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END33
+label IF_FALSE33
+push argument 1
+push local 0
+call Moves.get 2
+push constant 34
+eq
+push argument 1
+push constant 34
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE34
+goto IF_FALSE34
+label IF_TRUE34
+push constant 190
+push constant 168
+push constant 200
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 34
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 28
+push argument 1
+push constant 28
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 34
+push argument 1
+push constant 34
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END34
+label IF_FALSE34
+push argument 1
+push local 0
+call Moves.get 2
+push constant 35
+eq
+push argument 1
+push constant 35
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE35
+goto IF_FALSE35
+label IF_TRUE35
+push constant 190
+push constant 200
+push constant 232
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 35
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 29
+push argument 1
+push constant 29
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 35
+push argument 1
+push constant 35
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END35
+label IF_FALSE35
+push argument 1
+push local 0
+call Moves.get 2
+push constant 36
+eq
+push argument 1
+push constant 36
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE36
+goto IF_FALSE36
+label IF_TRUE36
+push constant 222
+push constant 40
+push constant 72
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 36
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 30
+push argument 1
+push constant 30
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END36
+label IF_FALSE36
+push argument 1
+push local 0
+call Moves.get 2
+push constant 37
+eq
+push argument 1
+push constant 37
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE37
+goto IF_FALSE37
+label IF_TRUE37
+push constant 222
+push constant 72
+push constant 104
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 37
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 31
+push argument 1
+push constant 31
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END37
+label IF_FALSE37
+push argument 1
+push local 0
+call Moves.get 2
+push constant 38
+eq
+push argument 1
+push constant 38
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE38
+goto IF_FALSE38
+label IF_TRUE38
+push constant 222
+push constant 104
+push constant 136
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 38
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 32
+push argument 1
+push constant 32
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END38
+label IF_FALSE38
+push argument 1
+push local 0
+call Moves.get 2
+push constant 39
+eq
+push argument 1
+push constant 39
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE39
+goto IF_FALSE39
+label IF_TRUE39
+push constant 222
+push constant 136
+push constant 168
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 39
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 33
+push argument 1
+push constant 33
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END39
+label IF_FALSE39
+push argument 1
+push local 0
+call Moves.get 2
+push constant 40
+eq
+push argument 1
+push constant 40
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE40
+goto IF_FALSE40
+label IF_TRUE40
+push constant 222
+push constant 168
+push constant 200
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 40
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 34
+push argument 1
+push constant 34
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END40
+label IF_FALSE40
+push argument 1
+push local 0
+call Moves.get 2
+push constant 41
+eq
+push argument 1
+push constant 41
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE41
+goto IF_FALSE41
+label IF_TRUE41
+push constant 222
+push constant 200
+push constant 232
+call Player.hline 3
+pop temp 0
+push argument 1
+push constant 41
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 35
+push argument 1
+push constant 35
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END41
+label IF_FALSE41
+push argument 1
+push local 0
+call Moves.get 2
+push constant 42
+eq
+push argument 1
+push constant 42
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE42
+goto IF_FALSE42
+label IF_TRUE42
+push constant 40
+push constant 30
+push constant 62
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 42
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 0
+push argument 1
+push constant 0
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END42
+label IF_FALSE42
+push argument 1
+push local 0
+call Moves.get 2
+push constant 43
+eq
+push argument 1
+push constant 43
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE43
+goto IF_FALSE43
+label IF_TRUE43
+push constant 40
+push constant 62
+push constant 94
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 43
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 6
+push argument 1
+push constant 6
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END43
+label IF_FALSE43
+push argument 1
+push local 0
+call Moves.get 2
+push constant 44
+eq
+push argument 1
+push constant 44
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE44
+goto IF_FALSE44
+label IF_TRUE44
+push constant 40
+push constant 94
+push constant 126
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 44
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 12
+push argument 1
+push constant 12
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END44
+label IF_FALSE44
+push argument 1
+push local 0
+call Moves.get 2
+push constant 45
+eq
+push argument 1
+push constant 45
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE45
+goto IF_FALSE45
+label IF_TRUE45
+push constant 40
+push constant 126
+push constant 158
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 45
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 18
+push argument 1
+push constant 18
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END45
+label IF_FALSE45
+push argument 1
+push local 0
+call Moves.get 2
+push constant 46
+eq
+push argument 1
+push constant 46
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE46
+goto IF_FALSE46
+label IF_TRUE46
+push constant 40
+push constant 158
+push constant 190
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 46
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 24
+push argument 1
+push constant 24
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END46
+label IF_FALSE46
+push argument 1
+push local 0
+call Moves.get 2
+push constant 47
+eq
+push argument 1
+push constant 47
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE47
+goto IF_FALSE47
+label IF_TRUE47
+push constant 40
+push constant 190
+push constant 222
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 47
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 30
+push argument 1
+push constant 30
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END47
+label IF_FALSE47
+push argument 1
+push local 0
+call Moves.get 2
+push constant 48
+eq
+push argument 1
+push constant 48
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE48
+goto IF_FALSE48
+label IF_TRUE48
+push constant 72
+push constant 30
+push constant 62
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 48
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 0
+push argument 1
+push constant 0
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 1
+push argument 1
+push constant 1
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END48
+label IF_FALSE48
+push argument 1
+push local 0
+call Moves.get 2
+push constant 49
+eq
+push argument 1
+push constant 49
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE49
+goto IF_FALSE49
+label IF_TRUE49
+push constant 72
+push constant 62
+push constant 94
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 49
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 6
+push argument 1
+push constant 6
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 7
+push argument 1
+push constant 7
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END49
+label IF_FALSE49
+push argument 1
+push local 0
+call Moves.get 2
+push constant 50
+eq
+push argument 1
+push constant 50
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE50
+goto IF_FALSE50
+label IF_TRUE50
+push constant 72
+push constant 94
+push constant 126
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 50
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 12
+push argument 1
+push constant 12
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 13
+push argument 1
+push constant 13
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END50
+label IF_FALSE50
+push argument 1
+push local 0
+call Moves.get 2
+push constant 51
+eq
+push argument 1
+push constant 51
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE51
+goto IF_FALSE51
+label IF_TRUE51
+push constant 72
+push constant 126
+push constant 158
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 51
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 18
+push argument 1
+push constant 18
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 19
+push argument 1
+push constant 19
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END51
+label IF_FALSE51
+push argument 1
+push local 0
+call Moves.get 2
+push constant 52
+eq
+push argument 1
+push constant 52
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE52
+goto IF_FALSE52
+label IF_TRUE52
+push constant 72
+push constant 158
+push constant 190
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 52
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 24
+push argument 1
+push constant 24
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 25
+push argument 1
+push constant 25
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END52
+label IF_FALSE52
+push argument 1
+push local 0
+call Moves.get 2
+push constant 53
+eq
+push argument 1
+push constant 53
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE53
+goto IF_FALSE53
+label IF_TRUE53
+push constant 72
+push constant 190
+push constant 222
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 53
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 30
+push argument 1
+push constant 30
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 31
+push argument 1
+push constant 31
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END53
+label IF_FALSE53
+push argument 1
+push local 0
+call Moves.get 2
+push constant 54
+eq
+push argument 1
+push constant 54
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE54
+goto IF_FALSE54
+label IF_TRUE54
+push constant 104
+push constant 30
+push constant 62
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 54
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 1
+push argument 1
+push constant 1
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 2
+push argument 1
+push constant 2
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END54
+label IF_FALSE54
+push argument 1
+push local 0
+call Moves.get 2
+push constant 55
+eq
+push argument 1
+push constant 55
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE55
+goto IF_FALSE55
+label IF_TRUE55
+push constant 104
+push constant 62
+push constant 94
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 55
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 7
+push argument 1
+push constant 7
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 8
+push argument 1
+push constant 8
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END55
+label IF_FALSE55
+push argument 1
+push local 0
+call Moves.get 2
+push constant 56
+eq
+push argument 1
+push constant 56
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE56
+goto IF_FALSE56
+label IF_TRUE56
+push constant 104
+push constant 94
+push constant 126
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 56
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 13
+push argument 1
+push constant 13
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 14
+push argument 1
+push constant 14
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END56
+label IF_FALSE56
+push argument 1
+push local 0
+call Moves.get 2
+push constant 57
+eq
+push argument 1
+push constant 57
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE57
+goto IF_FALSE57
+label IF_TRUE57
+push constant 104
+push constant 126
+push constant 158
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 57
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 19
+push argument 1
+push constant 19
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 20
+push argument 1
+push constant 20
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END57
+label IF_FALSE57
+push argument 1
+push local 0
+call Moves.get 2
+push constant 58
+eq
+push argument 1
+push constant 58
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE58
+goto IF_FALSE58
+label IF_TRUE58
+push constant 104
+push constant 158
+push constant 190
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 58
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 25
+push argument 1
+push constant 25
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 26
+push argument 1
+push constant 26
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END58
+label IF_FALSE58
+push argument 1
+push local 0
+call Moves.get 2
+push constant 59
+eq
+push argument 1
+push constant 59
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE59
+goto IF_FALSE59
+label IF_TRUE59
+push constant 104
+push constant 190
+push constant 222
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 59
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 31
+push argument 1
+push constant 31
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 32
+push argument 1
+push constant 32
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END59
+label IF_FALSE59
+push argument 1
+push local 0
+call Moves.get 2
+push constant 60
+eq
+push argument 1
+push constant 60
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE60
+goto IF_FALSE60
+label IF_TRUE60
+push constant 136
+push constant 30
+push constant 62
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 60
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 2
+push argument 1
+push constant 2
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 3
+push argument 1
+push constant 3
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END60
+label IF_FALSE60
+push argument 1
+push local 0
+call Moves.get 2
+push constant 61
+eq
+push argument 1
+push constant 61
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE61
+goto IF_FALSE61
+label IF_TRUE61
+push constant 136
+push constant 62
+push constant 94
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 61
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 8
+push argument 1
+push constant 8
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 9
+push argument 1
+push constant 9
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END61
+label IF_FALSE61
+push argument 1
+push local 0
+call Moves.get 2
+push constant 62
+eq
+push argument 1
+push constant 62
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE62
+goto IF_FALSE62
+label IF_TRUE62
+push constant 136
+push constant 94
+push constant 126
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 62
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 14
+push argument 1
+push constant 14
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 15
+push argument 1
+push constant 15
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END62
+label IF_FALSE62
+push argument 1
+push local 0
+call Moves.get 2
+push constant 63
+eq
+push argument 1
+push constant 63
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE63
+goto IF_FALSE63
+label IF_TRUE63
+push constant 136
+push constant 126
+push constant 158
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 63
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 20
+push argument 1
+push constant 20
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 21
+push argument 1
+push constant 21
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END63
+label IF_FALSE63
+push argument 1
+push local 0
+call Moves.get 2
+push constant 64
+eq
+push argument 1
+push constant 64
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE64
+goto IF_FALSE64
+label IF_TRUE64
+push constant 136
+push constant 158
+push constant 190
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 64
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 26
+push argument 1
+push constant 26
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 27
+push argument 1
+push constant 27
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END64
+label IF_FALSE64
+push argument 1
+push local 0
+call Moves.get 2
+push constant 65
+eq
+push argument 1
+push constant 65
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE65
+goto IF_FALSE65
+label IF_TRUE65
+push constant 136
+push constant 190
+push constant 222
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 65
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 32
+push argument 1
+push constant 32
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 33
+push argument 1
+push constant 33
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END65
+label IF_FALSE65
+push argument 1
+push local 0
+call Moves.get 2
+push constant 66
+eq
+push argument 1
+push constant 66
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE66
+goto IF_FALSE66
+label IF_TRUE66
+push constant 168
+push constant 30
+push constant 62
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 66
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 3
+push argument 1
+push constant 3
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 4
+push argument 1
+push constant 4
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END66
+label IF_FALSE66
+push argument 1
+push local 0
+call Moves.get 2
+push constant 67
+eq
+push argument 1
+push constant 67
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE67
+goto IF_FALSE67
+label IF_TRUE67
+push constant 168
+push constant 62
+push constant 94
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 67
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 9
+push argument 1
+push constant 9
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 10
+push argument 1
+push constant 10
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END67
+label IF_FALSE67
+push argument 1
+push local 0
+call Moves.get 2
+push constant 68
+eq
+push argument 1
+push constant 68
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE68
+goto IF_FALSE68
+label IF_TRUE68
+push constant 168
+push constant 94
+push constant 126
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 68
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 15
+push argument 1
+push constant 15
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 16
+push argument 1
+push constant 16
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END68
+label IF_FALSE68
+push argument 1
+push local 0
+call Moves.get 2
+push constant 69
+eq
+push argument 1
+push constant 69
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE69
+goto IF_FALSE69
+label IF_TRUE69
+push constant 168
+push constant 126
+push constant 158
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 69
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 21
+push argument 1
+push constant 21
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 22
+push argument 1
+push constant 22
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END69
+label IF_FALSE69
+push argument 1
+push local 0
+call Moves.get 2
+push constant 70
+eq
+push argument 1
+push constant 70
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE70
+goto IF_FALSE70
+label IF_TRUE70
+push constant 168
+push constant 158
+push constant 190
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 70
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 27
+push argument 1
+push constant 27
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 28
+push argument 1
+push constant 28
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END70
+label IF_FALSE70
+push argument 1
+push local 0
+call Moves.get 2
+push constant 71
+eq
+push argument 1
+push constant 71
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE71
+goto IF_FALSE71
+label IF_TRUE71
+push constant 168
+push constant 190
+push constant 222
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 71
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 33
+push argument 1
+push constant 33
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 34
+push argument 1
+push constant 34
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END71
+label IF_FALSE71
+push argument 1
+push local 0
+call Moves.get 2
+push constant 72
+eq
+push argument 1
+push constant 72
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE72
+goto IF_FALSE72
+label IF_TRUE72
+push constant 200
+push constant 30
+push constant 62
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 72
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 4
+push argument 1
+push constant 4
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 5
+push argument 1
+push constant 5
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END72
+label IF_FALSE72
+push argument 1
+push local 0
+call Moves.get 2
+push constant 73
+eq
+push argument 1
+push constant 73
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE73
+goto IF_FALSE73
+label IF_TRUE73
+push constant 200
+push constant 62
+push constant 94
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 73
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 10
+push argument 1
+push constant 10
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 11
+push argument 1
+push constant 11
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END73
+label IF_FALSE73
+push argument 1
+push local 0
+call Moves.get 2
+push constant 74
+eq
+push argument 1
+push constant 74
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE74
+goto IF_FALSE74
+label IF_TRUE74
+push constant 200
+push constant 94
+push constant 126
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 74
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 16
+push argument 1
+push constant 16
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 17
+push argument 1
+push constant 17
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END74
+label IF_FALSE74
+push argument 1
+push local 0
+call Moves.get 2
+push constant 75
+eq
+push argument 1
+push constant 75
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE75
+goto IF_FALSE75
+label IF_TRUE75
+push constant 200
+push constant 126
+push constant 158
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 75
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 22
+push argument 1
+push constant 22
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 23
+push argument 1
+push constant 23
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END75
+label IF_FALSE75
+push argument 1
+push local 0
+call Moves.get 2
+push constant 76
+eq
+push argument 1
+push constant 76
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE76
+goto IF_FALSE76
+label IF_TRUE76
+push constant 200
+push constant 158
+push constant 190
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 76
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 28
+push argument 1
+push constant 28
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 29
+push argument 1
+push constant 29
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END76
+label IF_FALSE76
+push argument 1
+push local 0
+call Moves.get 2
+push constant 77
+eq
+push argument 1
+push constant 77
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE77
+goto IF_FALSE77
+label IF_TRUE77
+push constant 200
+push constant 190
+push constant 222
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 77
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 34
+push argument 1
+push constant 34
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push argument 1
+push constant 35
+push argument 1
+push constant 35
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END77
+label IF_FALSE77
+push argument 1
+push local 0
+call Moves.get 2
+push constant 78
+eq
+push argument 1
+push constant 78
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE78
+goto IF_FALSE78
+label IF_TRUE78
+push constant 232
+push constant 30
+push constant 62
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 78
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 5
+push argument 1
+push constant 5
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END78
+label IF_FALSE78
+push argument 1
+push local 0
+call Moves.get 2
+push constant 79
+eq
+push argument 1
+push constant 79
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE79
+goto IF_FALSE79
+label IF_TRUE79
+push constant 232
+push constant 62
+push constant 94
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 79
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 11
+push argument 1
+push constant 11
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END79
+label IF_FALSE79
+push argument 1
+push local 0
+call Moves.get 2
+push constant 80
+eq
+push argument 1
+push constant 80
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE80
+goto IF_FALSE80
+label IF_TRUE80
+push constant 232
+push constant 94
+push constant 126
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 80
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 17
+push argument 1
+push constant 17
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END80
+label IF_FALSE80
+push argument 1
+push local 0
+call Moves.get 2
+push constant 81
+eq
+push argument 1
+push constant 81
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE81
+goto IF_FALSE81
+label IF_TRUE81
+push constant 232
+push constant 126
+push constant 158
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 81
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 23
+push argument 1
+push constant 23
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END81
+label IF_FALSE81
+push argument 1
+push local 0
+call Moves.get 2
+push constant 82
+eq
+push argument 1
+push constant 82
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE82
+goto IF_FALSE82
+label IF_TRUE82
+push constant 232
+push constant 158
+push constant 190
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 82
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 29
+push argument 1
+push constant 29
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+goto IF_END82
+label IF_FALSE82
+push argument 1
+push local 0
+call Moves.get 2
+push constant 83
+eq
+push argument 1
+push constant 83
+call Moves.get1 2
+push constant 0
+eq
+and
+if-goto IF_TRUE83
+goto IF_FALSE83
+label IF_TRUE83
+push constant 232
+push constant 190
+push constant 222
+call Player.vline 3
+pop temp 0
+push argument 1
+push constant 83
+push constant 1
+call Moves.set1 3
+pop temp 0
+push argument 1
+push constant 35
+push argument 1
+push constant 35
+call Moves.get2 2
+push constant 1
+add
+call Moves.set2 3
+pop temp 0
+push constant 0
+return
+label IF_FALSE83
+label IF_END82
+label IF_END81
+label IF_END80
+label IF_END79
+label IF_END78
+label IF_END77
+label IF_END76
+label IF_END75
+label IF_END74
+label IF_END73
+label IF_END72
+label IF_END71
+label IF_END70
+label IF_END69
+label IF_END68
+label IF_END67
+label IF_END66
+label IF_END65
+label IF_END64
+label IF_END63
+label IF_END62
+label IF_END61
+label IF_END60
+label IF_END59
+label IF_END58
+label IF_END57
+label IF_END56
+label IF_END55
+label IF_END54
+label IF_END53
+label IF_END52
+label IF_END51
+label IF_END50
+label IF_END49
+label IF_END48
+label IF_END47
+label IF_END46
+label IF_END45
+label IF_END44
+label IF_END43
+label IF_END42
+label IF_END41
+label IF_END40
+label IF_END39
+label IF_END38
+label IF_END37
+label IF_END36
+label IF_END35
+label IF_END34
+label IF_END33
+label IF_END32
+label IF_END31
+label IF_END30
+label IF_END29
+label IF_END28
+label IF_END27
+label IF_END26
+label IF_END25
+label IF_END24
+label IF_END23
+label IF_END22
+label IF_END21
+label IF_END20
+label IF_END19
+label IF_END18
+label IF_END17
+label IF_END16
+label IF_END15
+label IF_END14
+label IF_END13
+label IF_END12
+label IF_END11
+label IF_END10
+label IF_END9
+label IF_END8
+label IF_END7
+label IF_END6
+label IF_END5
+label IF_END4
+label IF_END3
+label IF_END2
+label IF_END1
+label IF_END0
+push constant 0
+not
+return
+function Find.find 3
+push constant 0
+pop local 0
+push constant 0
+pop local 1
+push argument 0
+push constant 1
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+pop local 2
+label WHILE_EXP0
+push local 0
+push constant 6
+lt
+not
+if-goto WHILE_END0
+push argument 1
+push local 0
+call Moves.get2 2
+push constant 2
+lt
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push argument 1
+push local 0
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push argument 1
+push local 1
+push local 0
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE2
+push argument 1
+push constant 6
+push local 0
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push argument 1
+push local 1
+push constant 6
+push local 0
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE3
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 42
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 42
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE4
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 48
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 48
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE5
+label IF_FALSE1
+push local 0
+push constant 1
+add
+pop local 0
+push local 2
+push constant 1
+add
+pop local 2
+goto WHILE_EXP0
+label WHILE_END0
+push constant 0
+pop local 2
+label WHILE_EXP1
+push local 0
+push constant 12
+lt
+not
+if-goto WHILE_END1
+push argument 1
+push local 0
+call Moves.get2 2
+push constant 2
+lt
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push argument 1
+push local 0
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push argument 1
+push local 1
+push local 0
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE7
+push argument 1
+push constant 6
+push local 0
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push argument 1
+push local 1
+push constant 6
+push local 0
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE8
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 43
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 43
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE9
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 49
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 49
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE10
+label IF_FALSE6
+push local 0
+push constant 1
+add
+pop local 0
+push local 2
+push constant 1
+add
+pop local 2
+goto WHILE_EXP1
+label WHILE_END1
+push constant 0
+pop local 2
+label WHILE_EXP2
+push local 0
+push constant 18
+lt
+not
+if-goto WHILE_END2
+push argument 1
+push local 0
+call Moves.get2 2
+push constant 2
+lt
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push argument 1
+push local 0
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE12
+goto IF_FALSE12
+label IF_TRUE12
+push argument 1
+push local 1
+push local 0
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE12
+push argument 1
+push constant 6
+push local 0
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE13
+goto IF_FALSE13
+label IF_TRUE13
+push argument 1
+push local 1
+push local 0
+push constant 6
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE13
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 44
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE14
+goto IF_FALSE14
+label IF_TRUE14
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 44
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE14
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 50
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE15
+goto IF_FALSE15
+label IF_TRUE15
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 50
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE15
+label IF_FALSE11
+push local 0
+push constant 1
+add
+pop local 0
+push local 2
+push constant 1
+add
+pop local 2
+goto WHILE_EXP2
+label WHILE_END2
+push constant 0
+pop local 2
+label WHILE_EXP3
+push local 0
+push constant 24
+lt
+not
+if-goto WHILE_END3
+push argument 1
+push local 0
+call Moves.get2 2
+push constant 2
+lt
+if-goto IF_TRUE16
+goto IF_FALSE16
+label IF_TRUE16
+push argument 1
+push local 0
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE17
+goto IF_FALSE17
+label IF_TRUE17
+push argument 1
+push local 1
+push local 0
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE17
+push argument 1
+push constant 6
+push local 0
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE18
+goto IF_FALSE18
+label IF_TRUE18
+push argument 1
+push local 1
+push local 0
+push constant 6
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE18
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 45
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE19
+goto IF_FALSE19
+label IF_TRUE19
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 45
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE19
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 51
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE20
+goto IF_FALSE20
+label IF_TRUE20
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 51
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE20
+label IF_FALSE16
+push local 0
+push constant 1
+add
+pop local 0
+push local 2
+push constant 1
+add
+pop local 2
+goto WHILE_EXP3
+label WHILE_END3
+push constant 0
+pop local 2
+label WHILE_EXP4
+push local 0
+push constant 30
+lt
+not
+if-goto WHILE_END4
+push argument 1
+push local 0
+call Moves.get2 2
+push constant 2
+lt
+if-goto IF_TRUE21
+goto IF_FALSE21
+label IF_TRUE21
+push argument 1
+push local 0
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE22
+goto IF_FALSE22
+label IF_TRUE22
+push argument 1
+push local 1
+push local 0
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE22
+push argument 1
+push constant 6
+push local 0
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE23
+goto IF_FALSE23
+label IF_TRUE23
+push argument 1
+push local 1
+push local 0
+push constant 6
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE23
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 46
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE24
+goto IF_FALSE24
+label IF_TRUE24
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 46
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE24
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 52
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE25
+goto IF_FALSE25
+label IF_TRUE25
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 52
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE25
+label IF_FALSE21
+push local 0
+push constant 1
+add
+pop local 0
+push local 2
+push constant 1
+add
+pop local 2
+goto WHILE_EXP4
+label WHILE_END4
+push constant 0
+pop local 2
+label WHILE_EXP5
+push local 0
+push constant 36
+lt
+not
+if-goto WHILE_END5
+push argument 1
+push local 0
+call Moves.get2 2
+push constant 2
+lt
+if-goto IF_TRUE26
+goto IF_FALSE26
+label IF_TRUE26
+push argument 1
+push local 0
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE27
+goto IF_FALSE27
+label IF_TRUE27
+push argument 1
+push local 1
+push local 0
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE27
+push argument 1
+push constant 6
+push local 0
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE28
+goto IF_FALSE28
+label IF_TRUE28
+push argument 1
+push local 1
+push local 0
+push constant 6
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE28
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 47
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE29
+goto IF_FALSE29
+label IF_TRUE29
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 47
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE29
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 53
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE30
+goto IF_FALSE30
+label IF_TRUE30
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 53
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE30
+label IF_FALSE26
+push local 0
+push constant 1
+add
+pop local 0
+push local 2
+push constant 1
+add
+pop local 2
+goto WHILE_EXP5
+label WHILE_END5
+label IF_FALSE0
+push argument 0
+push constant 2
+eq
+if-goto IF_TRUE31
+goto IF_FALSE31
+label IF_TRUE31
+push constant 0
+pop local 2
+label WHILE_EXP6
+push local 0
+push constant 6
+lt
+not
+if-goto WHILE_END6
+push argument 1
+push local 0
+call Moves.get2 2
+push constant 2
+eq
+if-goto IF_TRUE32
+goto IF_FALSE32
+label IF_TRUE32
+push argument 1
+push local 0
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE33
+goto IF_FALSE33
+label IF_TRUE33
+push argument 1
+push local 1
+push local 0
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE33
+push argument 1
+push constant 6
+push local 0
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE34
+goto IF_FALSE34
+label IF_TRUE34
+push argument 1
+push local 1
+push constant 6
+push local 0
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE34
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 42
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE35
+goto IF_FALSE35
+label IF_TRUE35
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 42
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE35
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 48
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE36
+goto IF_FALSE36
+label IF_TRUE36
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 48
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE36
+label IF_FALSE32
+push local 0
+push constant 1
+add
+pop local 0
+push local 2
+push constant 1
+add
+pop local 2
+goto WHILE_EXP6
+label WHILE_END6
+push constant 0
+pop local 2
+label WHILE_EXP7
+push local 0
+push constant 12
+lt
+not
+if-goto WHILE_END7
+push argument 1
+push local 0
+call Moves.get2 2
+push constant 2
+eq
+if-goto IF_TRUE37
+goto IF_FALSE37
+label IF_TRUE37
+push argument 1
+push local 0
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE38
+goto IF_FALSE38
+label IF_TRUE38
+push argument 1
+push local 1
+push local 0
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE38
+push argument 1
+push constant 6
+push local 0
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE39
+goto IF_FALSE39
+label IF_TRUE39
+push argument 1
+push local 1
+push constant 6
+push local 0
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE39
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 43
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE40
+goto IF_FALSE40
+label IF_TRUE40
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 43
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE40
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 49
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE41
+goto IF_FALSE41
+label IF_TRUE41
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 49
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE41
+label IF_FALSE37
+push local 0
+push constant 1
+add
+pop local 0
+push local 2
+push constant 1
+add
+pop local 2
+goto WHILE_EXP7
+label WHILE_END7
+push constant 0
+pop local 2
+label WHILE_EXP8
+push local 0
+push constant 18
+lt
+not
+if-goto WHILE_END8
+push argument 1
+push local 0
+call Moves.get2 2
+push constant 2
+eq
+if-goto IF_TRUE42
+goto IF_FALSE42
+label IF_TRUE42
+push argument 1
+push local 0
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE43
+goto IF_FALSE43
+label IF_TRUE43
+push argument 1
+push local 1
+push local 0
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE43
+push argument 1
+push constant 6
+push local 0
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE44
+goto IF_FALSE44
+label IF_TRUE44
+push argument 1
+push local 1
+push local 0
+push constant 6
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE44
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 44
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE45
+goto IF_FALSE45
+label IF_TRUE45
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 44
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE45
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 50
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE46
+goto IF_FALSE46
+label IF_TRUE46
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 50
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE46
+label IF_FALSE42
+push local 0
+push constant 1
+add
+pop local 0
+push local 2
+push constant 1
+add
+pop local 2
+goto WHILE_EXP8
+label WHILE_END8
+push constant 0
+pop local 2
+label WHILE_EXP9
+push local 0
+push constant 24
+lt
+not
+if-goto WHILE_END9
+push argument 1
+push local 0
+call Moves.get2 2
+push constant 2
+eq
+if-goto IF_TRUE47
+goto IF_FALSE47
+label IF_TRUE47
+push argument 1
+push local 0
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE48
+goto IF_FALSE48
+label IF_TRUE48
+push argument 1
+push local 1
+push local 0
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE48
+push argument 1
+push constant 6
+push local 0
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE49
+goto IF_FALSE49
+label IF_TRUE49
+push argument 1
+push local 1
+push local 0
+push constant 6
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE49
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 45
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE50
+goto IF_FALSE50
+label IF_TRUE50
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 45
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE50
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 51
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE51
+goto IF_FALSE51
+label IF_TRUE51
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 51
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE51
+label IF_FALSE47
+push local 0
+push constant 1
+add
+pop local 0
+push local 2
+push constant 1
+add
+pop local 2
+goto WHILE_EXP9
+label WHILE_END9
+push constant 0
+pop local 2
+label WHILE_EXP10
+push local 0
+push constant 30
+lt
+not
+if-goto WHILE_END10
+push argument 1
+push local 0
+call Moves.get2 2
+push constant 2
+eq
+if-goto IF_TRUE52
+goto IF_FALSE52
+label IF_TRUE52
+push argument 1
+push local 0
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE53
+goto IF_FALSE53
+label IF_TRUE53
+push argument 1
+push local 1
+push local 0
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE53
+push argument 1
+push constant 6
+push local 0
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE54
+goto IF_FALSE54
+label IF_TRUE54
+push argument 1
+push local 1
+push local 0
+push constant 6
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE54
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 46
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE55
+goto IF_FALSE55
+label IF_TRUE55
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 46
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE55
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 52
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE56
+goto IF_FALSE56
+label IF_TRUE56
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 52
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE56
+label IF_FALSE52
+push local 0
+push constant 1
+add
+pop local 0
+push local 2
+push constant 1
+add
+pop local 2
+goto WHILE_EXP10
+label WHILE_END10
+push constant 0
+pop local 2
+label WHILE_EXP11
+push local 0
+push constant 36
+lt
+not
+if-goto WHILE_END11
+push argument 1
+push local 0
+call Moves.get2 2
+push constant 2
+eq
+if-goto IF_TRUE57
+goto IF_FALSE57
+label IF_TRUE57
+push argument 1
+push local 0
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE58
+goto IF_FALSE58
+label IF_TRUE58
+push argument 1
+push local 1
+push local 0
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE58
+push argument 1
+push constant 6
+push local 0
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE59
+goto IF_FALSE59
+label IF_TRUE59
+push argument 1
+push local 1
+push local 0
+push constant 6
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE59
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 47
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE60
+goto IF_FALSE60
+label IF_TRUE60
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 47
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE60
+push argument 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 53
+add
+call Moves.get1 2
+push constant 0
+eq
+if-goto IF_TRUE61
+goto IF_FALSE61
+label IF_TRUE61
+push argument 1
+push local 1
+push local 2
+push constant 6
+call Math.multiply 2
+push constant 53
+add
+call Moves.set 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE61
+label IF_FALSE57
+push local 0
+push constant 1
+add
+pop local 0
+push local 2
+push constant 1
+add
+pop local 2
+goto WHILE_EXP11
+label WHILE_END11
+label IF_FALSE31
+push constant 0
+return

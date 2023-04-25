@@ -1,0 +1,238 @@
+class Main{
+	function void main(){
+		var char c;
+		var Moves a;
+		var Moves2 a2;
+		var boolean b;
+		var int pScore, cScore, i;
+		
+		let i = 0;
+		let pScore = 0; 
+		let cScore = 0;
+		let a = Moves.new();
+		let a2 = Moves2.new();
+		let b = true;
+		
+		do Board.mode();
+		while(b){
+			if(Keyboard.keyPressed()=51){
+				let c = 51;
+				do Screen.clearScreen();
+				do Board.bScreen();
+				do Board.start();
+				let b = false;
+			}
+			if(Keyboard.keyPressed()=54){
+				let c = 54;
+				do Screen.clearScreen();
+				do Board.boardScreen();
+				do Board.start();
+				let b = false;
+			}
+		}
+		
+		let b = true;
+		while(b){
+			if(c = 51){
+				if(Keyboard.keyPressed()=49){
+					do Screen.clearScreen();
+					do Board.bScreen();
+					do Board.score2(0,0);
+					
+					while((pScore+cScore)<9){
+						do Board.turn2(1);
+						do Player2.move(a2);
+						
+						while(Boxes.isClosed2(a2) & (cScore+pScore<9)){              
+							do Boxes.fill2(1,Boxes.num2(a2));                        
+							let pScore = pScore+1;
+							do Board.score2(pScore,cScore);
+							do Board.turn2(1);
+							if(Boxes.isClosed2(a2)){                                 
+								do Boxes.fill2(1,Boxes.num2(a2));                    
+								let pScore = pScore+1;
+								do Board.score2(pScore,cScore);
+							}
+							if((pScore+cScore)<9){
+								do Player2.move(a2);
+							}
+						}
+						
+						do Board.turn2(2);
+						if(pScore+cScore<9){
+							do Comp2.move(a2);
+						}
+						while(Boxes.isClosed2(a2) & (cScore+pScore<9)){               
+							do Boxes.fill2(2,Boxes.num2(a2));                         
+							let cScore = cScore+1;
+							do Board.score2(pScore,cScore);
+							do Board.turn2(2);
+							if(Boxes.isClosed2(a2)){                                  
+								do Boxes.fill2(2,Boxes.num2(a2));                     
+								let cScore = cScore+1;
+								do Board.score2(pScore,cScore);
+							}
+							if((pScore+cScore)<9){
+								do Comp2.move(a2);
+							}
+							
+						}
+					}
+					do GameEnd.winner(pScore,cScore);
+					let b = false;
+				}
+				if(Keyboard.keyPressed()=50){
+					do Screen.clearScreen();
+					do Board.bScreen();
+					do Board.score(0,0);
+					
+					while((pScore+cScore)<9){
+						if(cScore+pScore<9){
+							do Board.turn(1);
+							do Player2.move(a2);
+							
+							while(Boxes.isClosed2(a2) & (cScore+pScore<9)){           
+								do Boxes.fill2(1,Boxes.num2(a2));                     
+								let pScore = pScore+1;
+								do Board.score(pScore,cScore);
+								do Board.turn(1);
+								if(Boxes.isClosed2(a2)){                              
+									do Boxes.fill2(1,Boxes.num2(a2));                 
+									let pScore = pScore+1;
+									do Board.score(pScore,cScore);
+								}
+								if((pScore+cScore)<9){
+									do Player2.move(a2);
+								}
+								
+							}
+						}
+						if(pScore+cScore<9){
+							do Board.turn(2);
+							do Player2.move(a2);
+							
+							while(Boxes.isClosed2(a2) & (cScore+pScore<9)){           
+								do Boxes.fill2(2,Boxes.num2(a2));                      
+								let cScore = cScore+1;
+								do Board.score(pScore,cScore);
+								do Board.turn(2);
+								if(Boxes.isClosed2(a2)){                              
+									do Boxes.fill2(2,Boxes.num2(a2));                  
+									let cScore = cScore+1;
+									do Board.score(pScore,cScore);
+								}
+								if((pScore+cScore)<9){
+									do Player2.move(a2);
+								}
+								
+							}
+						}
+					}
+					do GameEnd.winner2(pScore,cScore);
+					let b = false;
+				}
+			}
+			
+			if(c = 54){
+				if(Keyboard.keyPressed()=49){
+					do Screen.clearScreen();
+					do Board.boardScreen();
+					do Board.score2(0,0);
+					
+					while((pScore+cScore)<36){
+						do Board.turn2(1);
+						do Player.move(a);
+						
+						while(Boxes.isClosed(a) & (cScore+pScore<36)){
+							do Boxes.fill(1,Boxes.num(a));
+							let pScore = pScore+1;
+							do Board.score2(pScore,cScore);
+							do Board.turn2(1);
+							if(Boxes.isClosed(a)){
+								do Boxes.fill(1,Boxes.num(a));
+								let pScore = pScore+1;
+								do Board.score2(pScore,cScore);
+							}
+							if((pScore+cScore)<36){
+								do Player.move(a);
+							}
+						}
+						
+						do Board.turn2(2);
+						if(pScore+cScore<36){
+							do Comp.move(a);
+						}
+						while(Boxes.isClosed(a) & (cScore+pScore<36)){
+							do Boxes.fill(2,Boxes.num(a));
+							let cScore = cScore+1;
+							do Board.score2(pScore,cScore);
+							do Board.turn2(2);
+							if(Boxes.isClosed(a)){
+								do Boxes.fill(2,Boxes.num(a));
+								let cScore = cScore+1;
+								do Board.score2(pScore,cScore);
+							}
+							if((pScore+cScore)<36){
+								do Comp.move(a);
+							}
+							
+						}
+					}
+					do GameEnd.winner(pScore,cScore);
+					let b = false;
+				}
+				if(Keyboard.keyPressed()=50){
+					do Screen.clearScreen();
+					do Board.boardScreen();
+					do Board.score(0,0);
+					
+					while((pScore+cScore)<36){
+						if(cScore+pScore<36){
+							do Board.turn(1);
+							do Player.move(a);
+							//let i = i+1;
+							while(Boxes.isClosed(a) & (cScore+pScore<36)){
+								do Boxes.fill(1,Boxes.num(a));
+								let pScore = pScore+1;
+								do Board.score(pScore,cScore);
+								do Board.turn(1);
+								if(Boxes.isClosed(a)){
+									do Boxes.fill(1,Boxes.num(a));
+									let pScore = pScore+1;
+									do Board.score(pScore,cScore);
+								}
+								if((pScore+cScore)<36){
+									do Player.move(a);
+								}
+								//let i = i+1;
+							}
+						}
+						if(pScore+cScore<36){
+							do Board.turn(2);
+							do Player.move(a);
+							
+							while(Boxes.isClosed(a) & (cScore+pScore<36)){
+								do Boxes.fill(2,Boxes.num(a));
+								let cScore = cScore+1;
+								do Board.score(pScore,cScore);
+								do Board.turn(2);
+								if(Boxes.isClosed(a)){
+									do Boxes.fill(2,Boxes.num(a));
+									let cScore = cScore+1;
+									do Board.score(pScore,cScore);
+								}
+								if((pScore+cScore)<36){
+									do Player.move(a);
+								}
+								
+							}
+						}
+					}
+					do GameEnd.winner2(pScore,cScore);
+					let b = false;
+				}
+			}
+		}
+		return;
+	}
+}

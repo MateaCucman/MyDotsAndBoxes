@@ -1,0 +1,301 @@
+class Find2{ 
+	function boolean draw(int i, Moves2 a){
+		var int k;
+		do Find2.find(i,a);
+		do Random.setSeed(a.geti());
+		let k = Random.randRange(1000);
+		do Random.setSeed(k);
+		let k = Random.randRange(a.geti());
+		
+		if(a.get(k)=0 & (a.get1(0)=0)){
+			do Player.hline(36,46,106);
+			do a.set1(0,1);
+			do a.set2(0,a.get2(0)+1);
+			return false;
+		}
+		else{ if(a.get(k)=1 & (a.get1(1)=0)){
+			do Player.hline(36,106,166);
+			do a.set1(1,1);
+			do a.set2(1,a.get2(1)+1);
+			return false;
+		}
+		else{ if(a.get(k)=2 & (a.get1(2)=0)){
+			do Player.hline(36,166,226);
+			do a.set1(2,1);
+			do a.set2(2,a.get2(2)+1);
+			return false;
+		}
+		else{ if(a.get(k)=3 & (a.get1(3)=0)){
+			do Player.hline(96,46,106);
+			do a.set1(3,1);
+			do a.set2(0,a.get2(0)+1);
+			do a.set2(3,a.get2(3)+1);
+			return false;
+		}
+		else{ if(a.get(k)=4 & (a.get1(4)=0)){
+			do Player.hline(96,106,166);
+			do a.set1(4,1);
+			do a.set2(1,a.get2(1)+1);
+			do a.set2(4,a.get2(4)+1);
+			return false;
+		}
+		else{ if(a.get(k)=5 & (a.get1(5)=0)){
+			do Player.hline(96,166,226);
+			do a.set1(5,1);
+			do a.set2(2,a.get2(2)+1);
+			do a.set2(5,a.get2(5)+1);
+			return false;
+		}
+		else{ if(a.get(k)=6 & (a.get1(6)=0)){
+			do Player.hline(156,46,106);
+			do a.set1(6,1);
+			do a.set2(3,a.get2(3)+1);
+			do a.set2(6,a.get2(6)+1);
+			return false;
+		}
+		else{ if(a.get(k)=7 & (a.get1(7)=0)){
+			do Player.hline(156,106,166);
+			do a.set1(7,1);
+			do a.set2(4,a.get2(4)+1);
+			do a.set2(7,a.get2(7)+1);
+			return false;
+		}
+		else{ if(a.get(k)=8 & (a.get1(8)=0)){
+			do Player.hline(156,166,226);
+			do a.set1(8,1);
+			do a.set2(5,a.get2(5)+1);
+			do a.set2(8,a.get2(8)+1);
+			return false;
+		}
+		else{ if(a.get(k)=9 & (a.get1(9)=0)){
+			do Player.hline(216,46,106);
+			do a.set1(9,1);
+			do a.set2(6,a.get2(6)+1);
+			return false;
+		}
+		else{ if(a.get(k)=10 & (a.get1(10)=0)){
+			do Player.hline(216,106,166);
+			do a.set1(10,1);
+			do a.set2(7,a.get2(7)+1);
+			return false;
+		}
+		else{ if(a.get(k)=11 & (a.get1(11)=0)){
+			do Player.hline(216,166,226);
+			do a.set1(11,1);
+			do a.set2(8,a.get2(8)+1);
+			return false;
+		}
+		else{ if(a.get(k)=12 & (a.get1(12)=0)){
+			do Player.vline(46,36,96);
+			do a.set1(12,1);
+			do a.set2(0,a.get2(0)+1);
+			return false;
+		}
+		else{ if(a.get(k)=13 & (a.get1(13)=0)){
+			do Player.vline(46,96,156);
+			do a.set1(13,1);
+			do a.set2(3,a.get2(3)+1);
+			return false;
+		}
+		else{ if(a.get(k)=14 & (a.get1(14)=0)){
+			do Player.vline(46,156,216);
+			do a.set1(14,1);
+			do a.set2(6,a.get2(6)+1);
+			return false;
+		}
+		else{ if(a.get(k)=15 & (a.get1(15)=0)){
+			do Player.vline(106,36,96);
+			do a.set1(15,1);
+			do a.set2(0,a.get2(0)+1);
+			do a.set2(1,a.get2(1)+1);
+			return false;
+		}
+		else{ if(a.get(k)=16 & (a.get1(16)=0)){
+			do Player.vline(106,96,156);
+			do a.set1(16,1);
+			do a.set2(3,a.get2(3)+1);
+			do a.set2(4,a.get2(4)+1);
+			return false;
+		}
+		else{ if(a.get(k)=17 & (a.get1(17)=0)){
+			do Player.vline(106,156,216);
+			do a.set1(17,1);
+			do a.set2(6,a.get2(6)+1);
+			do a.set2(7,a.get2(7)+1);
+			return false;
+		}
+		else{ if(a.get(k)=18 & (a.get1(18)=0)){
+			do Player.vline(166,36,96);
+			do a.set1(18,1);
+			do a.set2(1,a.get2(1)+1);
+			do a.set2(2,a.get2(2)+1);
+			return false;
+		}
+		else{ if(a.get(k)=19 & (a.get1(19)=0)){
+			do Player.vline(166,96,156);
+			do a.set1(19,1);
+			do a.set2(4,a.get2(4)+1);
+			do a.set2(5,a.get2(5)+1);
+			return false;
+		}
+		else{ if(a.get(k)=20 & (a.get1(20)=0)){
+			do Player.vline(166,156,216);
+			do a.set1(20,1);
+			do a.set2(7,a.get2(7)+1);
+			do a.set2(8,a.get2(8)+1);
+			return false;
+		}
+		else{ if(a.get(k)=21 & (a.get1(21)=0)){
+			do Player.vline(226,36,96);
+			do a.set1(21,1);
+			do a.set2(2,a.get2(2)+1);
+			return false;
+		}
+		else{ if(a.get(k)=22 & (a.get1(22)=0)){
+			do Player.vline(226,96,156);
+			do a.set1(22,1);
+			do a.set2(5,a.get2(5)+1);
+			return false;
+		}
+		else{ if(a.get(k)=23 & (a.get1(23)=0)){
+			do Player.vline(226,156,216);
+			do a.set1(23,1);
+			do a.set2(8,a.get2(8)+1);
+			return false;
+		}}}}}}}}}}}}
+		}}}}}}}}}}}}
+		return true;
+	}
+	
+	function void find(int m, Moves2 a){
+		var int i,j,k;
+		let i = 0;
+		let j = 0;
+		
+		if(m=1){
+			let k = 0;
+			while(i<3){
+				if(a.get2(i)<2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(3+i)=0){
+						do a.set(j,3+i);
+						let j = j+1;
+					}if(a.get1(k*3+12)=0){
+						do a.set(j,k*3+12);
+						let j = j+1;
+					}if(a.get1(k*3+15)=0){
+						do a.set(j,k*3+15);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+			let k = 0;
+			while(i<6){
+				if(a.get2(i)<2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(3+i)=0){
+						do a.set(j,3+i);
+						let j = j+1;
+					}if(a.get1(k*3+13)=0){
+						do a.set(j,k*3+13);
+						let j = j+1;
+					}if(a.get1(k*3+16)=0){
+						do a.set(j,k*3+16);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+			let k = 0;
+			while(i<9){
+				if(a.get2(i)<2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(3+i)=0){
+						do a.set(j,i+3);
+						let j = j+1;
+					}if(a.get1(k*3+14)=0){
+						do a.set(j,k*3+14);
+						let j = j+1;
+					}if(a.get1(k*3+17)=0){
+						do a.set(j,k*3+17);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+		}
+		if(m=2){
+			let k = 0;
+			while(i<3){
+				if(a.get2(i)=2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(3+i)=0){
+						do a.set(j,3+i);
+						let j = j+1;
+					}if(a.get1(k*3+12)=0){
+						do a.set(j,k*3+12);
+						let j = j+1;
+					}if(a.get1(k*3+15)=0){
+						do a.set(j,k*3+15);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+			let k = 0;
+			while(i<6){
+				if(a.get2(i)=2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(3+i)=0){
+						do a.set(j,3+i);
+						let j = j+1;
+					}if(a.get1(k*3+13)=0){
+						do a.set(j,k*3+13);
+						let j = j+1;
+					}if(a.get1(k*3+16)=0){
+						do a.set(j,k*3+16);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+			let k = 0;
+			while(i<9){
+				if(a.get2(i)=2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(3+i)=0){
+						do a.set(j,i+3);
+						let j = j+1;
+					}if(a.get1(k*3+14)=0){
+						do a.set(j,k*3+14);
+						let j = j+1;
+					}if(a.get1(k*3+17)=0){
+						do a.set(j,k*3+17);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+		}
+		return;
+	}
+}

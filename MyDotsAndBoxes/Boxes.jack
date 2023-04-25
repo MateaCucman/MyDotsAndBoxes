@@ -1,0 +1,272 @@
+class Boxes{ 
+	function void fill(int i,int n){
+		if(i=1){
+			if(n=0){
+				do Screen.drawCircle(56,46,10);
+			}if(n=6){
+				do Screen.drawCircle(56,78,10);
+			}if(n=12){
+				do Screen.drawCircle(56,110,10);
+			}if(n=18){
+				do Screen.drawCircle(56,142,10);
+			}if(n=24){
+				do Screen.drawCircle(56,174,10);
+			}if(n=30){
+				do Screen.drawCircle(56,206,10);
+			}if(n=1){
+				do Screen.drawCircle(88,46,10);
+			}if(n=7){
+				do Screen.drawCircle(88,78,10);
+			}if(n=13){
+				do Screen.drawCircle(88,110,10);
+			}if(n=19){
+				do Screen.drawCircle(88,142,10);
+			}if(n=25){
+				do Screen.drawCircle(88,174,10);
+			}if(n=31){
+				do Screen.drawCircle(88,206,10);
+			}if(n=2){
+				do Screen.drawCircle(120,46,10);
+			}if(n=8){
+				do Screen.drawCircle(120,78,10);
+			}if(n=14){
+				do Screen.drawCircle(120,110,10);
+			}if(n=20){
+				do Screen.drawCircle(120,142,10);
+			}if(n=26){
+				do Screen.drawCircle(120,174,10);
+			}if(n=32){
+				do Screen.drawCircle(120,206,10);
+			}if(n=3){
+				do Screen.drawCircle(152,46,10);
+			}if(n=9){
+				do Screen.drawCircle(152,78,10);
+			}if(n=15){
+				do Screen.drawCircle(152,110,10);
+			}if(n=21){
+				do Screen.drawCircle(152,142,10);
+			}if(n=27){
+				do Screen.drawCircle(152,174,10);
+			}if(n=33){
+				do Screen.drawCircle(152,206,10);
+			}if(n=4){
+				do Screen.drawCircle(184,46,10);
+			}if(n=10){
+				do Screen.drawCircle(184,78,10);
+			}if(n=16){
+				do Screen.drawCircle(184,110,10);
+			}if(n=22){
+				do Screen.drawCircle(184,142,10);
+			}if(n=28){
+				do Screen.drawCircle(184,174,10);
+			}if(n=34){
+				do Screen.drawCircle(184,206,10);
+			}if(n=5){
+				do Screen.drawCircle(216,46,10);
+			}if(n=11){
+				do Screen.drawCircle(216,78,10);
+			}if(n=17){
+				do Screen.drawCircle(216,110,10);
+			}if(n=23){
+				do Screen.drawCircle(216,142,10);
+			}if(n=29){
+				do Screen.drawCircle(216,174,10);
+			}if(n=35){
+				do Screen.drawCircle(216,206,10);
+			}
+		}
+		
+		if(i=2){
+			if(n=0){
+			do Screen.drawRectangle(47,37,65,55);
+			}if(n=6){
+			do Screen.drawRectangle(47,69,65,87);
+			}if(n=12){
+			do Screen.drawRectangle(47,101,65,119);
+			}if(n=18){
+			do Screen.drawRectangle(47,133,65,151);
+			}if(n=24){
+			do Screen.drawRectangle(47,165,65,183);
+			}if(n=30){
+			do Screen.drawRectangle(47,197,65,215);
+			}if(n=1){
+			do Screen.drawRectangle(79,37,97,55);
+			}if(n=7){
+			do Screen.drawRectangle(79,69,97,87);
+			}if(n=13){
+			do Screen.drawRectangle(79,101,97,119);
+			}if(n=19){
+			do Screen.drawRectangle(79,133,97,151);
+			}if(n=25){
+			do Screen.drawRectangle(79,165,97,183);
+			}if(n=31){
+			do Screen.drawRectangle(79,197,97,215);
+			}if(n=2){
+			do Screen.drawRectangle(111,37,129,55);
+			}if(n=8){
+			do Screen.drawRectangle(111,69,129,87);
+			}if(n=14){
+			do Screen.drawRectangle(111,101,129,119);
+			}if(n=20){
+			do Screen.drawRectangle(111,133,129,151);
+			}if(n=26){
+			do Screen.drawRectangle(111,165,129,183);
+			}if(n=32){
+			do Screen.drawRectangle(111,197,129,215);
+			}if(n=3){
+			do Screen.drawRectangle(143,37,161,55);
+			}if(n=9){
+			do Screen.drawRectangle(143,69,161,87);
+			}if(n=15){
+			do Screen.drawRectangle(143,101,161,119);
+			}if(n=21){
+			do Screen.drawRectangle(143,133,161,151);
+			}if(n=27){
+			do Screen.drawRectangle(143,165,161,183);
+			}if(n=33){
+			do Screen.drawRectangle(143,197,161,215);
+			}if(n=4){
+			do Screen.drawRectangle(175,37,193,55);
+			}if(n=10){
+			do Screen.drawRectangle(175,69,193,87);
+			}if(n=16){
+			do Screen.drawRectangle(175,101,193,119);
+			}if(n=22){
+			do Screen.drawRectangle(175,133,193,151);
+			}if(n=28){
+			do Screen.drawRectangle(175,165,193,183);
+			}if(n=34){
+			do Screen.drawRectangle(175,197,193,215);
+			}if(n=5){
+			do Screen.drawRectangle(207,37,225,55);
+			}if(n=11){
+			do Screen.drawRectangle(207,69,225,87);
+			}if(n=17){
+			do Screen.drawRectangle(207,101,225,119);
+			}if(n=23){
+			do Screen.drawRectangle(207,133,225,151);
+			}if(n=29){
+			do Screen.drawRectangle(207,165,225,183);
+			}if(n=35){
+			do Screen.drawRectangle(207,197,225,215);
+			}
+		}
+		return;
+	}
+	
+	function void fill2(int i, int n){
+		if(i=1){
+			if(n=0){
+				do Screen.drawCircle(76,66,20);
+			}
+			if(n=1){
+				do Screen.drawCircle(136,66,20);
+			}
+			if(n=2){
+				do Screen.drawCircle(196,66,20);
+			}
+			if(n=3){
+				do Screen.drawCircle(76,126,20);
+			}
+			if(n=4){
+				do Screen.drawCircle(136,126,20);
+			}
+			if(n=5){
+				do Screen.drawCircle(196,126,20);
+			}
+			if(n=6){
+				do Screen.drawCircle(76,186,20);
+			}
+			if(n=7){
+				do Screen.drawCircle(136,186,20);
+			}
+			if(n=8){
+				do Screen.drawCircle(196,186,20);
+			}
+		}
+		if(i=2){
+			if(n=0){
+			do Screen.drawRectangle(56,46,96,86);
+			}
+			if(n=1){
+			do Screen.drawRectangle(116,46,156,86);
+			}
+			if(n=2){
+			do Screen.drawRectangle(176,46,216,86);
+			}
+			if(n=3){
+			do Screen.drawRectangle(56,106,96,146);
+			}
+			if(n=4){
+			do Screen.drawRectangle(116,106,156,146);
+			}
+			if(n=5){
+			do Screen.drawRectangle(176,106,216,146);
+			}
+			if(n=6){
+			do Screen.drawRectangle(56,166,96,206);
+			}
+			if(n=7){
+			do Screen.drawRectangle(116,166,156,206);
+			}
+			if(n=8){
+			do Screen.drawRectangle(176,166,216,206);
+			}
+		}
+		return;
+	}
+	
+	function boolean isClosed(Moves a){
+		var int i;
+		let i = 0;
+		while(i<36){
+			if(a.get2(i)=4){
+				return true;
+			}
+			let i = i+1;
+		}
+		return false;
+	}
+	
+	function boolean isClosed2(Moves2 a){
+		var int i;
+		let i = 0;
+		while(i<9){
+			if(a.get2(i)=4){
+				return true;
+			}
+			let i = i+1;
+		}
+		return false;
+	}
+	
+	function int num(Moves a){
+		var int i;
+		var boolean b;
+		let i = -1;
+		let b = true;
+		while(b){
+			let i = i+1;
+			if(a.get2(i)=4){
+				do a.set2(i,a.get2(i)+1);
+				let b = false;
+			}
+		}
+		return i;
+	}
+	
+	function int num2(Moves2 a){
+		var int i;
+		var boolean b;
+		let i = -1;
+		let b = true;
+		while(b){
+			let i = i+1;
+			if(a.get2(i)=4){
+				do a.set2(i,a.get2(i)+1);
+				let b = false;
+			}
+		}
+		return i;
+	}
+}

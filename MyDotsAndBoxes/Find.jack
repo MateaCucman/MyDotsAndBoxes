@@ -1,0 +1,838 @@
+class Find{ 
+	function boolean draw(int i,Moves a){
+		var int k;
+		do Find.find(i,a);
+		do Random.setSeed(a.geti());
+		let k = Random.randRange(1000);
+		do Random.setSeed(k);
+		let k = Random.randRange(a.geti());
+		
+		if(a.get(k)=0 & (a.get1(0)=0)){
+			do Player.hline(30,40,72);
+			do a.set1(0,1);
+			do a.set2(0,a.get2(0)+1);
+			return false;
+		}
+		else{ if(a.get(k)=1 & (a.get1(1)=0)){
+			do Player.hline(30,72,104);
+			do a.set1(1,1);
+			do a.set2(1,a.get2(1)+1);
+			return false;
+		}
+		else{ if(a.get(k)=2 & (a.get1(2)=0)){
+			do Player.hline(30,104,136);
+			do a.set1(2,1);
+			do a.set2(2,a.get2(2)+1);
+			return false;
+		}
+		else{ if(a.get(k)=3 & (a.get1(3)=0)){
+			do Player.hline(30,136,168);
+			do a.set1(3,1);
+			do a.set2(3,a.get2(3)+1);
+			return false;
+		}
+		else{ if(a.get(k)=4 & (a.get1(4)=0)){
+			do Player.hline(30,168,200);
+			do a.set1(4,1);
+			do a.set2(4,a.get2(4)+1);
+			return false;
+		}
+		else{ if(a.get(k)=5 & (a.get1(5)=0)){
+			do Player.hline(30,200,232);
+			do a.set1(5,1);
+			do a.set2(5,a.get2(5)+1);
+			return false;
+		}
+		else{ if(a.get(k)=6 & (a.get1(6)=0)){
+			do Player.hline(62,40,72);
+			do a.set1(6,1);
+			do a.set2(0,a.get2(0)+1);
+			do a.set2(6,a.get2(6)+1);
+			return false;
+		}
+		else{ if(a.get(k)=7 & (a.get1(7)=0)){
+			do Player.hline(62,72,104);
+			do a.set1(7,1);
+			do a.set2(1,a.get2(1)+1);
+			do a.set2(7,a.get2(7)+1);
+			return false;
+		}
+		else{ if(a.get(k)=8 & (a.get1(8)=0)){
+			do Player.hline(62,104,136);
+			do a.set1(8,1);
+			do a.set2(2,a.get2(2)+1);
+			do a.set2(8,a.get2(8)+1);
+			return false;
+		}
+		else{ if(a.get(k)=9 & (a.get1(9)=0)){
+			do Player.hline(62,136,168);
+			do a.set1(9,1);
+			do a.set2(3,a.get2(3)+1);
+			do a.set2(9,a.get2(9)+1);
+			return false;
+		}
+		else{ if(a.get(k)=10 & (a.get1(10)=0)){
+			do Player.hline(62,168,200);
+			do a.set1(10,1);
+			do a.set2(4,a.get2(4)+1);
+			do a.set2(10,a.get2(10)+1);
+			return false;
+		}
+		else{ if(a.get(k)=11 & (a.get1(11)=0)){
+			do Player.hline(62,200,232);
+			do a.set1(11,1);
+			do a.set2(5,a.get2(5)+1);
+			do a.set2(11,a.get2(11)+1);
+			return false;
+		}
+		else{ if(a.get(k)=12 & (a.get1(12)=0)){
+			do Player.hline(94,40,72);
+			do a.set1(12,1);
+			do a.set2(6,a.get2(6)+1);
+			do a.set2(12,a.get2(12)+1);
+			return false;
+		}
+		else{ if(a.get(k)=13 & (a.get1(13)=0)){
+			do Player.hline(94,72,104);
+			do a.set1(13,1);
+			do a.set2(7,a.get2(7)+1);
+			do a.set2(13,a.get2(13)+1);
+			return false;
+		}
+		else{ if(a.get(k)=14 & (a.get1(14)=0)){
+			do Player.hline(94,104,136);
+			do a.set1(14,1);
+			do a.set2(8,a.get2(8)+1);
+			do a.set2(14,a.get2(14)+1);
+			return false;
+		}
+		else{ if(a.get(k)=15 & (a.get1(15)=0)){
+			do Player.hline(94,136,168);
+			do a.set1(15,1);
+			do a.set2(9,a.get2(9)+1);
+			do a.set2(15,a.get2(15)+1);
+			return false;
+		}
+		else{ if(a.get(k)=16 & (a.get1(16)=0)){
+			do Player.hline(94,168,200);
+			do a.set1(16,1);
+			do a.set2(10,a.get2(10)+1);
+			do a.set2(16,a.get2(16)+1);
+			return false;
+		}
+		else{ if(a.get(k)=17 & (a.get1(17)=0)){
+			do Player.hline(94,200,232);
+			do a.set1(17,1);
+			do a.set2(11,a.get2(11)+1);
+			do a.set2(17,a.get2(17)+1);
+			return false;
+		}
+		else{ if(a.get(k)=18 & (a.get1(18)=0)){
+			do Player.hline(126,40,72);
+			do a.set1(18,1);
+			do a.set2(12,a.get2(12)+1);
+			do a.set2(18,a.get2(18)+1);
+			return false;
+		}
+		else{ if(a.get(k)=19 & (a.get1(19)=0)){
+			do Player.hline(126,72,104);
+			do a.set1(19,1);
+			do a.set2(13,a.get2(13)+1);
+			do a.set2(19,a.get2(19)+1);
+			return false;
+		}
+		else{ if(a.get(k)=20 & (a.get1(20)=0)){
+			do Player.hline(126,104,136);
+			do a.set1(20,1);
+			do a.set2(14,a.get2(14)+1);
+			do a.set2(20,a.get2(20)+1);
+			return false;
+		}
+		else{ if(a.get(k)=21 & (a.get1(21)=0)){
+			do Player.hline(126,136,168);
+			do a.set1(21,1);
+			do a.set2(15,a.get2(15)+1);
+			do a.set2(21,a.get2(21)+1);
+			return false;
+		}
+		else{ if(a.get(k)=22 & (a.get1(22)=0)){
+			do Player.hline(126,168,200);
+			do a.set1(22,1);
+			do a.set2(16,a.get2(16)+1);
+			do a.set2(22,a.get2(22)+1);
+			return false;
+		}
+		else{ if(a.get(k)=23 & (a.get1(23)=0)){
+			do Player.hline(126,200,232);
+			do a.set1(23,1);
+			do a.set2(17,a.get2(17)+1);
+			do a.set2(23,a.get2(23)+1);
+			return false;
+		}
+		else{ if(a.get(k)=24 & (a.get1(24)=0)){
+			do Player.hline(158,40,72);
+			do a.set1(24,1);
+			do a.set2(18,a.get2(18)+1);
+			do a.set2(24,a.get2(24)+1);
+			return false;
+		}
+		else{ if(a.get(k)=25 & (a.get1(25)=0)){
+			do Player.hline(158,72,104);
+			do a.set1(25,1);
+			do a.set2(19,a.get2(19)+1);
+			do a.set2(25,a.get2(25)+1);
+			return false;
+		}
+		else{ if(a.get(k)=26 & (a.get1(26)=0)){
+			do Player.hline(158,104,136);
+			do a.set1(26,1);
+			do a.set2(20,a.get2(20)+1);
+			do a.set2(26,a.get2(26)+1);
+			return false;
+		}
+		else{ if(a.get(k)=27 & (a.get1(27)=0)){
+			do Player.hline(158,136,168);
+			do a.set1(27,1);
+			do a.set2(21,a.get2(21)+1);
+			do a.set2(27,a.get2(27)+1);
+			return false;
+		}
+		else{ if(a.get(k)=28 & (a.get1(28)=0)){
+			do Player.hline(158,168,200);
+			do a.set1(28,1);
+			do a.set2(22,a.get2(22)+1);
+			do a.set2(28,a.get2(28)+1);
+			return false;
+		}
+		else{ if(a.get(k)=29 & (a.get1(29)=0)){
+			do Player.hline(158,200,232);
+			do a.set1(29,1);
+			do a.set2(23,a.get2(23)+1);
+			do a.set2(29,a.get2(29)+1);
+			return false;
+		}
+		else{ if(a.get(k)=30 & (a.get1(30)=0)){
+			do Player.hline(190,40,72);
+			do a.set1(30,1);
+			do a.set2(24,a.get2(24)+1);
+			do a.set2(30,a.get2(30)+1);
+			return false;
+		}
+		else{ if(a.get(k)=31 & (a.get1(31)=0)){
+			do Player.hline(190,72,104);
+			do a.set1(31,1);
+			do a.set2(25,a.get2(25)+1);
+			do a.set2(31,a.get2(31)+1);
+			return false;
+		}
+		else{ if(a.get(k)=32 & (a.get1(32)=0)){
+			do Player.hline(190,104,136);
+			do a.set1(32,1);
+			do a.set2(26,a.get2(26)+1);
+			do a.set2(32,a.get2(32)+1);
+			return false;
+		}
+		else{ if(a.get(k)=33 & (a.get1(33)=0)){
+			do Player.hline(190,136,168);
+			do a.set1(33,1);
+			do a.set2(27,a.get2(27)+1);
+			do a.set2(33,a.get2(33)+1);
+			return false;
+		}
+		else{ if(a.get(k)=34 & (a.get1(34)=0)){
+			do Player.hline(190,168,200);
+			do a.set1(34,1);
+			do a.set2(28,a.get2(28)+1);
+			do a.set2(34,a.get2(34)+1);
+			return false;
+		}
+		else{ if(a.get(k)=35 & (a.get1(35)=0)){
+			do Player.hline(190,200,232);
+			do a.set1(35,1);
+			do a.set2(29,a.get2(29)+1);
+			do a.set2(35,a.get2(35)+1);
+			return false;
+		}
+		else{ if(a.get(k)=36 & (a.get1(36)=0)){
+			do Player.hline(222,40,72);
+			do a.set1(36,1);
+			do a.set2(30,a.get2(30)+1);
+			return false;
+		}
+		else{ if(a.get(k)=37 & (a.get1(37)=0)){
+			do Player.hline(222,72,104);
+			do a.set1(37,1);
+			do a.set2(31,a.get2(31)+1);
+			return false;
+		}
+		else{ if(a.get(k)=38 & (a.get1(38)=0)){
+			do Player.hline(222,104,136);
+			do a.set1(38,1);
+			do a.set2(32,a.get2(32)+1);
+			return false;
+		}
+		else{ if(a.get(k)=39 & (a.get1(39)=0)){
+			do Player.hline(222,136,168);
+			do a.set1(39,1);
+			do a.set2(33,a.get2(33)+1);
+			return false;
+		}
+		else{ if(a.get(k)=40 & (a.get1(40)=0)){
+			do Player.hline(222,168,200);
+			do a.set1(40,1);
+			do a.set2(34,a.get2(34)+1);
+			return false;
+		}
+		else{ if(a.get(k)=41 & (a.get1(41)=0)){
+			do Player.hline(222,200,232);
+			do a.set1(41,1);
+			do a.set2(35,a.get2(35)+1);
+			return false;
+		}
+		else{ if(a.get(k)=42 & (a.get1(42)=0)){
+			do Player.vline(40,30,62);
+			do a.set1(42,1);
+			do a.set2(0,a.get2(0)+1);
+			return false;
+		}
+		else{ if(a.get(k)=43 & (a.get1(43)=0)){
+			do Player.vline(40,62,94);
+			do a.set1(43,1);
+			do a.set2(6,a.get2(6)+1);
+			return false;
+		}
+		else{ if(a.get(k)=44 & (a.get1(44)=0)){
+			do Player.vline(40,94,126);
+			do a.set1(44,1);
+			do a.set2(12,a.get2(12)+1);
+			return false;
+		}
+		else{ if(a.get(k)=45 & (a.get1(45)=0)){
+			do Player.vline(40,126,158);
+			do a.set1(45,1);
+			do a.set2(18,a.get2(18)+1);
+			return false;
+		}
+		else{ if(a.get(k)=46 & (a.get1(46)=0)){
+			do Player.vline(40,158,190);
+			do a.set1(46,1);
+			do a.set2(24,a.get2(24)+1);
+			return false;
+		}
+		else{ if(a.get(k)=47 & (a.get1(47)=0)){
+			do Player.vline(40,190,222);
+			do a.set1(47,1);
+			do a.set2(30,a.get2(30)+1);
+			return false;
+		}
+		else{ if(a.get(k)=48 & (a.get1(48)=0)){
+			do Player.vline(72,30,62);
+			do a.set1(48,1);
+			do a.set2(0,a.get2(0)+1);
+			do a.set2(1,a.get2(1)+1);
+			return false;
+		}
+		else{ if(a.get(k)=49 & (a.get1(49)=0)){
+			do Player.vline(72,62,94);
+			do a.set1(49,1);
+			do a.set2(6,a.get2(6)+1);
+			do a.set2(7,a.get2(7)+1);
+			return false;
+		}
+		else{ if(a.get(k)=50 & (a.get1(50)=0)){
+			do Player.vline(72,94,126);
+			do a.set1(50,1);
+			do a.set2(12,a.get2(12)+1);
+			do a.set2(13,a.get2(13)+1);
+			return false;
+		}
+		else{ if(a.get(k)=51 & (a.get1(51)=0)){
+			do Player.vline(72,126,158);
+			do a.set1(51,1);
+			do a.set2(18,a.get2(18)+1);
+			do a.set2(19,a.get2(19)+1);
+			return false;
+		}
+		else{ if(a.get(k)=52 & (a.get1(52)=0)){
+			do Player.vline(72,158,190);
+			do a.set1(52,1);
+			do a.set2(24,a.get2(24)+1);
+			do a.set2(25,a.get2(25)+1);
+			return false;
+		}
+		else{ if(a.get(k)=53 & (a.get1(53)=0)){
+			do Player.vline(72,190,222);
+			do a.set1(53,1);
+			do a.set2(30,a.get2(30)+1);
+			do a.set2(31,a.get2(31)+1);
+			return false;
+		}
+		else{ if(a.get(k)=54 & (a.get1(54)=0)){
+			do Player.vline(104,30,62);
+			do a.set1(54,1);
+			do a.set2(1,a.get2(1)+1);
+			do a.set2(2,a.get2(2)+1);
+			return false;
+		}
+		else{ if(a.get(k)=55 & (a.get1(55)=0)){
+			do Player.vline(104,62,94);
+			do a.set1(55,1);
+			do a.set2(7,a.get2(7)+1);
+			do a.set2(8,a.get2(8)+1);
+			return false;
+		}
+		else{ if(a.get(k)=56 & (a.get1(56)=0)){
+			do Player.vline(104,94,126);
+			do a.set1(56,1);
+			do a.set2(13,a.get2(13)+1);
+			do a.set2(14,a.get2(14)+1);
+			return false;
+		}
+		else{ if(a.get(k)=57 & (a.get1(57)=0)){
+			do Player.vline(104,126,158);
+			do a.set1(57,1);
+			do a.set2(19,a.get2(19)+1);
+			do a.set2(20,a.get2(20)+1);
+			return false;
+		}
+		else{ if(a.get(k)=58 & (a.get1(58)=0)){
+			do Player.vline(104,158,190);
+			do a.set1(58,1);
+			do a.set2(25,a.get2(25)+1);
+			do a.set2(26,a.get2(26)+1);
+			return false;
+		}
+		else{ if(a.get(k)=59 & (a.get1(59)=0)){
+			do Player.vline(104,190,222);
+			do a.set1(59,1);
+			do a.set2(31,a.get2(31)+1);
+			do a.set2(32,a.get2(32)+1);
+			return false;
+		}
+		else{ if(a.get(k)=60 & (a.get1(60)=0)){
+			do Player.vline(136,30,62);
+			do a.set1(60,1);
+			do a.set2(2,a.get2(2)+1);
+			do a.set2(3,a.get2(3)+1);
+			return false;
+		}
+		else{ if(a.get(k)=61 & (a.get1(61)=0)){
+			do Player.vline(136,62,94);
+			do a.set1(61,1);
+			do a.set2(8,a.get2(8)+1);
+			do a.set2(9,a.get2(9)+1);
+			return false;
+		}
+		else{ if(a.get(k)=62 & (a.get1(62)=0)){
+			do Player.vline(136,94,126);
+			do a.set1(62,1);
+			do a.set2(14,a.get2(14)+1);
+			do a.set2(15,a.get2(15)+1);
+			return false;
+		}
+		else{ if(a.get(k)=63 & (a.get1(63)=0)){
+			do Player.vline(136,126,158);
+			do a.set1(63,1);
+			do a.set2(20,a.get2(20)+1);
+			do a.set2(21,a.get2(21)+1);
+			return false;
+		}
+		else{ if(a.get(k)=64 & (a.get1(64)=0)){
+			do Player.vline(136,158,190);
+			do a.set1(64,1);
+			do a.set2(26,a.get2(26)+1);
+			do a.set2(27,a.get2(27)+1);
+			return false;
+		}
+		else{ if(a.get(k)=65 & (a.get1(65)=0)){
+			do Player.vline(136,190,222);
+			do a.set1(65,1);
+			do a.set2(32,a.get2(32)+1);
+			do a.set2(33,a.get2(33)+1);
+			return false;
+		}
+		else{ if(a.get(k)=66 & (a.get1(66)=0)){
+			do Player.vline(168,30,62);
+			do a.set1(66,1);
+			do a.set2(3,a.get2(3)+1);
+			do a.set2(4,a.get2(4)+1);
+			return false;
+		}
+		else{ if(a.get(k)=67 & (a.get1(67)=0)){
+			do Player.vline(168,62,94);
+			do a.set1(67,1);
+			do a.set2(9,a.get2(9)+1);
+			do a.set2(10,a.get2(10)+1);
+			return false;
+		}
+		else{ if(a.get(k)=68 & (a.get1(68)=0)){
+			do Player.vline(168,94,126);
+			do a.set1(68,1);
+			do a.set2(15,a.get2(15)+1);
+			do a.set2(16,a.get2(16)+1);
+			return false;
+		}
+		else{ if(a.get(k)=69 & (a.get1(69)=0)){
+			do Player.vline(168,126,158);
+			do a.set1(69,1);
+			do a.set2(21,a.get2(21)+1);
+			do a.set2(22,a.get2(22)+1);
+			return false;
+		}
+		else{ if(a.get(k)=70 & (a.get1(70)=0)){
+			do Player.vline(168,158,190);
+			do a.set1(70,1);
+			do a.set2(27,a.get2(27)+1);
+			do a.set2(28,a.get2(28)+1);
+			return false;
+		}
+		else{ if(a.get(k)=71 & (a.get1(71)=0)){
+			do Player.vline(168,190,222);
+			do a.set1(71,1);
+			do a.set2(33,a.get2(33)+1);
+			do a.set2(34,a.get2(34)+1);
+			return false;
+		}
+		else{ if(a.get(k)=72 & (a.get1(72)=0)){
+			do Player.vline(200,30,62);
+			do a.set1(72,1);
+			do a.set2(4,a.get2(4)+1);
+			do a.set2(5,a.get2(5)+1);
+			return false;
+		}
+		else{ if(a.get(k)=73 & (a.get1(73)=0)){
+			do Player.vline(200,62,94);
+			do a.set1(73,1);
+			do a.set2(10,a.get2(10)+1);
+			do a.set2(11,a.get2(11)+1);
+			return false;
+		}
+		else{ if(a.get(k)=74 & (a.get1(74)=0)){
+			do Player.vline(200,94,126);
+			do a.set1(74,1);
+			do a.set2(16,a.get2(16)+1);
+			do a.set2(17,a.get2(17)+1);
+			return false;
+		}
+		else{ if(a.get(k)=75 & (a.get1(75)=0)){
+			do Player.vline(200,126,158);
+			do a.set1(75,1);
+			do a.set2(22,a.get2(22)+1);
+			do a.set2(23,a.get2(23)+1);
+			return false;
+		}
+		else{ if(a.get(k)=76 & (a.get1(76)=0)){
+			do Player.vline(200,158,190);
+			do a.set1(76,1);
+			do a.set2(28,a.get2(28)+1);
+			do a.set2(29,a.get2(29)+1);
+			return false;
+		}
+		else{ if(a.get(k)=77 & (a.get1(77)=0)){
+			do Player.vline(200,190,222);
+			do a.set1(77,1);
+			do a.set2(34,a.get2(34)+1);
+			do a.set2(35,a.get2(35)+1);
+			return false;
+		}
+		else{ if(a.get(k)=78 & (a.get1(78)=0)){
+			do Player.vline(232,30,62);
+			do a.set1(78,1);
+			do a.set2(5,a.get2(5)+1);
+			return false;
+		}
+		else{ if(a.get(k)=79 & (a.get1(79)=0)){
+			do Player.vline(232,62,94);
+			do a.set1(79,1);
+			do a.set2(11,a.get2(11)+1);
+			return false;
+		}
+		else{ if(a.get(k)=80 & (a.get1(80)=0)){
+			do Player.vline(232,94,126);
+			do a.set1(80,1);
+			do a.set2(17,a.get2(17)+1);
+			return false;
+		}
+		else{ if(a.get(k)=81 & (a.get1(81)=0)){
+			do Player.vline(232,126,158);
+			do a.set1(81,1);
+			do a.set2(23,a.get2(23)+1);
+			return false;
+		}
+		else{ if(a.get(k)=82 & (a.get1(82)=0)){
+			do Player.vline(232,158,190);
+			do a.set1(82,1);
+			do a.set2(29,a.get2(29)+1);
+			return false;
+		}
+		else{ if(a.get(k)=83 & (a.get1(83)=0)){
+			do Player.vline(232,190,222);
+			do a.set1(83,1);
+			do a.set2(35,a.get2(35)+1);
+			return false;
+		}
+		}}}
+		}}}}}}}}}}
+		}}}}}}}}}}
+		}}}}}}}}}}
+		}}}}}}}}}}
+		}}}}}}}}}}
+		}}}}}}}}}}
+		}}}}}}}}}}
+		}}}}}}}}}}
+		
+		return true;
+	}
+	
+	function void find(int m, Moves a){
+		var int i,j,k;
+		let i = 0;
+		let j = 0;
+		
+		if(m=1){
+			let k = 0;
+			while(i<6){
+				if(a.get2(i)<2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(6+i)=0){
+						do a.set(j,6+i);
+						let j = j+1;
+					}if(a.get1(k*6+42)=0){
+						do a.set(j,k*6+42);
+						let j = j+1;
+					}if(a.get1(k*6+48)=0){
+						do a.set(j,k*6+48);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+			let k = 0;
+			while(i<12){
+				if(a.get2(i)<2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(6+i)=0){
+						do a.set(j,6+i);
+						let j = j+1;
+					}if(a.get1(k*6+43)=0){
+						do a.set(j,k*6+43);
+						let j = j+1;
+					}if(a.get1(k*6+49)=0){
+						do a.set(j,k*6+49);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+			let k = 0;
+			while(i<18){
+				if(a.get2(i)<2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(6+i)=0){
+						do a.set(j,i+6);
+						let j = j+1;
+					}if(a.get1(k*6+44)=0){
+						do a.set(j,k*6+44);
+						let j = j+1;
+					}if(a.get1(k*6+50)=0){
+						do a.set(j,k*6+50);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+			let k = 0;
+			while(i<24){
+				if(a.get2(i)<2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(6+i)=0){
+						do a.set(j,i+6);
+						let j = j+1;
+					}if(a.get1(k*6+45)=0){
+						do a.set(j,k*6+45);
+						let j = j+1;
+					}if(a.get1(k*6+51)=0){
+						do a.set(j,k*6+51);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+			let k = 0;
+			while(i<30){
+				if(a.get2(i)<2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(6+i)=0){
+						do a.set(j,i+6);
+						let j = j+1;
+					}if(a.get1(k*6+46)=0){
+						do a.set(j,k*6+46);
+						let j = j+1;
+					}if(a.get1(k*6+52)=0){
+						do a.set(j,k*6+52);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+			let k = 0;
+			while(i<36){
+				if(a.get2(i)<2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(6+i)=0){
+						do a.set(j,i+6);
+						let j = j+1;
+					}if(a.get1(k*6+47)=0){
+						do a.set(j,k*6+47);
+						let j = j+1;
+					}if(a.get1(k*6+53)=0){
+						do a.set(j,k*6+53);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+		} 
+		if(m=2){
+			let k = 0;
+			while(i<6){
+				if(a.get2(i)=2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(6+i)=0){
+						do a.set(j,6+i);
+						let j = j+1;
+					}if(a.get1(k*6+42)=0){
+						do a.set(j,k*6+42);
+						let j = j+1;
+					}if(a.get1(k*6+48)=0){
+						do a.set(j,k*6+48);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+			let k = 0;
+			while(i<12){
+				if(a.get2(i)=2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(6+i)=0){
+						do a.set(j,6+i);
+						let j = j+1;
+					}if(a.get1(k*6+43)=0){
+						do a.set(j,k*6+43);
+						let j = j+1;
+					}if(a.get1(k*6+49)=0){
+						do a.set(j,k*6+49);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+			let k = 0;
+			while(i<18){
+				if(a.get2(i)=2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(6+i)=0){
+						do a.set(j,i+6);
+						let j = j+1;
+					}if(a.get1(k*6+44)=0){
+						do a.set(j,k*6+44);
+						let j = j+1;
+					}if(a.get1(k*6+50)=0){
+						do a.set(j,k*6+50);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+			let k = 0;
+			while(i<24){
+				if(a.get2(i)=2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(6+i)=0){
+						do a.set(j,i+6);
+						let j = j+1;
+					}if(a.get1(k*6+45)=0){
+						do a.set(j,k*6+45);
+						let j = j+1;
+					}if(a.get1(k*6+51)=0){
+						do a.set(j,k*6+51);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+			let k = 0;
+			while(i<30){
+				if(a.get2(i)=2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(6+i)=0){
+						do a.set(j,i+6);
+						let j = j+1;
+					}if(a.get1(k*6+46)=0){
+						do a.set(j,k*6+46);
+						let j = j+1;
+					}if(a.get1(k*6+52)=0){
+						do a.set(j,k*6+52);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+			let k = 0;
+			while(i<36){
+				if(a.get2(i)=2){
+					if(a.get1(i)=0){
+						do a.set(j,i);
+						let j = j+1;
+					}if(a.get1(6+i)=0){
+						do a.set(j,i+6);
+						let j = j+1;
+					}if(a.get1(k*6+47)=0){
+						do a.set(j,k*6+47);
+						let j = j+1;
+					}if(a.get1(k*6+53)=0){
+						do a.set(j,k*6+53);
+						let j = j+1;
+					}
+				}
+				let i = i+1;
+				let k = k+1;
+			}
+		}
+		return;
+	}
+}

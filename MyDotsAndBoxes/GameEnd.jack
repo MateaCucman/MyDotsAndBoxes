@@ -1,0 +1,39 @@
+class GameEnd{ 
+	function void winner(int p, int c){
+		do Screen.setColor(false);
+		do Screen.drawRectangle(281,31,469,219);
+		do Screen.setColor(true);
+		if(p>c){
+			do Output.moveCursor(9,43);
+			do Output.printString("You won!");
+		}else{
+			if(p=c){
+				do Output.moveCursor(9,42);
+				do Output.printString("Tie game.");
+			}else{
+				do Output.moveCursor(9,42);
+				do Output.printString("You lost.");
+			}
+		}
+		return;
+	}
+	
+	function void winner2(int p, int c){
+		do Screen.setColor(false);
+		do Screen.drawRectangle(281,31,469,219);
+		do Screen.setColor(true);
+		if(p>c){
+			do Output.moveCursor(9,42);
+			do Output.printString("Player1 won!");
+		}else{
+			if(p=c){
+				do Output.moveCursor(9,42);
+				do Output.printString("Tie game.");
+			}else{
+				do Output.moveCursor(9,42);
+				do Output.printString("Player2 won!");
+			}
+		}
+		return;
+	}
+}
